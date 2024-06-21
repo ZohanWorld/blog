@@ -1,0 +1,117 @@
+$white: #ffffff;
+$light-grey: #ebeef3;
+$border: #d9d9d9;
+$blue: #1890ff;
+$light-blue: #40a9ff;
+$red: #f5222d;
+$light-red: #ff4d4f;
+$error: #f5222d;
+
+.create-article {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  background-color: $light-grey;
+  padding-top: 26px;
+  padding-bottom: 80px;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $light-grey;
+    z-index: -1;
+  }
+  .create-article__form {
+    display: flex;
+    flex-direction: column;
+    width: 938px;
+    margin-top: 34px;
+    padding: 48px 32px;
+    background-color: $white;
+    border: 1px solid $border;
+    border-radius: 5px;
+    .create-article__title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+    }
+    .create-article__label {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 21px;
+      .create-article__input {
+        width: 874px;
+        height: 40px;
+        padding-left: 5px;
+        border: 1px solid #d9d9d9;
+        border-radius: 5px;
+        outline: none;
+        &:focus {
+          border: 1px solid #aaaaaa;
+        }
+      }
+      .create-article__input--width {
+        resize: vertical;
+        height: 168px;
+      }
+      .create-article__input--tag {
+        width: 300px;
+        margin-right: 17px;
+        margin-bottom: 12px;
+      }
+      .create-article__error {
+        color: $error;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 22px;
+        text-align: left;
+      }
+    }
+    .create-article__button {
+      background-color: $white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .create-article__button--delete {
+      margin-right: 17px;
+      padding: 8px 36px;
+      border: 1px solid $red;
+      color: $red;
+      &:hover {
+        background-color: $light-grey;
+        border-color: $light-red;
+        color: $light-red;
+      }
+    }
+    .create-article__button--add {
+      padding: 8px 36px;
+      border: 1px solid $blue;
+      color: $blue;
+      &:hover {
+        background-color: $light-grey;
+        border-color: $light-blue;
+        color: $light-blue;
+      }
+    }
+    .create-article__button--submit {
+      width: 319px;
+      height: 40px;
+      color: $white;
+      background-color: $blue;
+      &:hover {
+        background-color: $light-blue;
+      }
+    }
+  }
+}

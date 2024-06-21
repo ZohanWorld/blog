@@ -1,0 +1,12 @@
+$background: #ebeef3;
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $background;
+  .home-page__pagination {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}

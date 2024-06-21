@@ -1,0 +1,71 @@
+$white: #ffffff;
+$black: #000000d9;
+$green: #52c41a;
+
+.header {
+  display: flex;
+  padding: 12px 22px 12px 22px;
+  background-color: $white;
+  align-items: center;
+  .header__title {
+    color: $black;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .header__sign-in {
+    margin-left: auto;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    text-decoration: none;
+    margin-right: 19px;
+    color: $black;
+  }
+  .header__sign-up {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    text-decoration: none;
+    border: 1px solid $green;
+    border-radius: 4px;
+    padding: 6px 16px;
+    color: $green;
+  }
+  .header__new-article {
+    margin-left: auto;
+    border: 1px solid $green;
+    border-radius: 5px;
+    color: $green;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+  }
+  .header__profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+    color: $black;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+    .header__profile-avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+    }
+  }
+  .header__sign-out {
+    border: 1px solid $black;
+    border-radius: 5px;
+    background-color: $white;
+    margin-left: 25px;
+    padding: 7px 14px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
+}

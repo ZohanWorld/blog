@@ -1,0 +1,89 @@
+$white: #ffffff;
+$light-grey: #ececec;
+$heading: #1890ff;
+$black: #000000;
+
+.article-card {
+  display: flex;
+  justify-content: space-between;
+  background-color: $white;
+  width: 940px;
+  height: 140px;
+  margin-top: 26px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 12px 0px #00000026;
+  .arcticle-info {
+    gap: 5px;
+    .arcticle-info__title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      .arcticle-info__title-text {
+        color: $heading;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: left;
+      }
+      .arcticle-info__likes {
+        display: flex;
+        align-items: center;
+        margin-left: 8px;
+        .arcticle-info__likes-button {
+          height: 16px;
+          width: 16px;
+          border: none;
+          cursor: pointer;
+          background-image: url('../img/heart.svg');
+        }
+        .arcticle-info__likes-button--full {
+          height: 16px;
+          width: 16px;
+          border: none;
+          cursor: pointer;
+          background-image: url('../img/heart_red.svg');
+        }
+      }
+    }
+    .arcticle-info__tag {
+      margin-right: 5px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.52px;
+      text-align: left;
+      border: 1px solid $black;
+      border-radius: 2px;
+      padding: 2px 5px;
+    }
+    .arcticle-info__description {
+      font-size: 12px;
+      line-height: 22px;
+      text-align: left;
+      margin-top: 5px;
+    }
+  }
+  .author {
+    display: flex;
+    flex-shrink: 0;
+    .author__info {
+      margin-right: 12px;
+      .author__name {
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+      }
+      .author__date {
+        font-size: 12px;
+        line-height: 22px;
+        text-align: left;
+        font-weight: 300;
+      }
+    }
+    .author__avatar {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+    }
+  }
+}

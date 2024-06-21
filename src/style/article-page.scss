@@ -1,0 +1,127 @@
+$white: #ffffff;
+$light-grey: #ebeef3;
+$blue: #1890ff;
+$black: #000000;
+$green: #52c41a;
+$red: #f5222d;
+$gray: #66666680;
+
+.article-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-grey;
+  padding-top: 26px;
+  padding-bottom: 80px;
+  .article {
+    background-color: $white;
+    box-shadow: 0px 4px 12px 0px #00000026;
+    border-radius: 5px;
+    min-height: 740px;
+    width: 938px;
+    padding: 15px;
+    .article-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .article-info__title {
+        .arcticle-info__tag {
+          margin-right: 5px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.52px;
+          text-align: left;
+          border: 1px solid $black;
+          border-radius: 2px;
+          padding: 2px 5px;
+        }
+        .article-info__title-text {
+          display: flex;
+          align-items: baseline;
+          color: $blue;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 28px;
+          text-align: left;
+          .article-info__likes {
+            display: flex;
+            align-items: center;
+            color: $black;
+            .article-info__likes-button {
+              height: 16px;
+              width: 16px;
+              margin-left: 5px;
+              cursor: pointer;
+              border: none;
+              background-image: url('../img/heart.svg');
+              &--full {
+                height: 16px;
+                width: 16px;
+                margin-left: 5px;
+                cursor: pointer;
+                border: none;
+                background-image: url('../img/heart_red.svg');
+              }
+            }
+          }
+        }
+        .article-info__description {
+          color: $gray;
+          font-size: 12px;
+          line-height: 22px;
+          text-align: left;
+        }
+      }
+      .author {
+        gap: 10px;
+        .author__block {
+          display: flex;
+          .author__info {
+            display: flex;
+            flex-direction: column;
+            .author__name {
+              font-size: 18px;
+              line-height: 28px;
+              text-align: left;
+            }
+            .author__date {
+              font-size: 12px;
+              line-height: 22px;
+              text-align: left;
+              font-weight: 300;
+            }
+          }
+          .author__avatar {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+          }
+        }
+        .author__btns {
+          display: flex;
+          gap: 10px;
+          position: relative;
+          .author__btn {
+            width: 50%;
+            height: 32px;
+            border-radius: 5px;
+            background-color: $white;
+            &:active {
+              background-color: $light-grey;
+              transform: scale(0.98);
+              transition: transform 0.1s ease-in-out;
+            }
+            &--edit {
+              border: 1px solid $green;
+              color: $green;
+            }
+            &--delete {
+              border: 1px solid $red;
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
